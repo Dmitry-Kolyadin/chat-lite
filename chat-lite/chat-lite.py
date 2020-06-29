@@ -8,7 +8,7 @@ import boto3
 import threading
 import json
 import time
-import .config
+import config
 i = ''
 from kivy.clock import Clock
 queue_msg = []
@@ -174,12 +174,7 @@ class MyApp(App):
 
 
         t.bind(on_text_validate=on_enter)
-        layout = BoxLayout(orientation='vertical')
-        label1 = Label(text='Hello from Kivy',
-                      size_hint=(.5, .5),
-                      pos_hint={'center_x': .5, 'center_y': .5})
-        labels.add_widget(label1)
-        layout.add_widget(labels)
+
 
         change_text(labels, period=0.5, new_text='B')
         return skren1
