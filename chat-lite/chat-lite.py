@@ -16,7 +16,6 @@ lisurlqeue = config.lisurlqeue
 senduriqueue=config.senduriqueue
 AWS_ACCESS_KEY_ID=config.AWS_ACCESS_KEY_ID
 AWS_SECRET_ACCESS_KEY=config.AWS_SECRET_ACCESS_KEY
-
 def dddd():
         client = boto3.client(
             service_name='sqs',
