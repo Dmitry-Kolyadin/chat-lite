@@ -1,5 +1,8 @@
+# -*- coding: utf-8 -*-
+import threading, random
+import requests
 
-
+url = 'https://functions.yandexcloud.net/d4enqmko3pkmobp9n74m'
 
 
 
@@ -7,11 +10,16 @@
 
 # вход с нового устройства
 def logining(data):
-    pass
+    data_send=data
+    r = requests.post(url, data = data_send)
+    print(r)
+    print(r.text)
 
 # вход с зарегистрированным устройством
 def login_devise(data):
-    pass
+    r = requests.post(url, data = data)
+    print(r)
+    print(r.text)
 
 # создание аккаунта
 def reg():

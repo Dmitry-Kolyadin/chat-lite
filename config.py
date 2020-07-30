@@ -9,3 +9,6 @@ if 1:   # вася
 AWS_ACCESS_KEY_ID = "PDTI3oNeFVjPhtcOv9Oh"
 AWS_SECRET_ACCESS_KEY = "sR2SheJG6g8zuYFOUQeMB1mJMSL2VjTYilVw9Pob"
 hh = 0
+
+if hh == 0:
+    pass
